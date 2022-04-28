@@ -1,0 +1,44 @@
+* {
+  font-family: cursive;
+}
+
+.content .mb-3 {
+  width: 45%;
+  margin: auto;
+}
+
+.content hr {
+
+  width: 55%;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.list {
+  width: 87%;
+  text-align: left;
+}
+
+.list:hover {
+  background-color: #f3f7f5;
+}
+
+.add-task {
+  margin: auto;
+  width: 65%;
+}
+
+.add-task h1 {
+  margin: 25px 0px;
+
+}
+
+/* .add-task h1 span {
+ width:50%;
+ text-align: left;
+} */
+
+.task-container {
+  width: 85%;
+  margin-bottom: 25px;
+}
