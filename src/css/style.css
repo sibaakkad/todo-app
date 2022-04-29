@@ -2,16 +2,38 @@
   font-family: cursive;
 }
 
-.content .mb-3 {
-  width: 45%;
+.content {
+  width: 50%;
   margin: auto;
 }
 
 .content hr {
-
-  width: 55%;
+  width: 100%;
   margin: auto;
   margin-top: 20px;
+  margin-bottom: 20px;
+  height: 3px;
+}
+
+.completed div {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.completed input:checked {
+  background-color: gray;
+  border-color: gray;
+}
+
+.content h2 {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.uncompleted,
+.completed {
+  width: 90%;
+  margin: auto;
 }
 
 .list {
@@ -33,10 +55,9 @@
 
 }
 
-/* .add-task h1 span {
- width:50%;
- text-align: left;
-} */
+.add-task h1 span {
+  width: 60%;
+}
 
 .task-container {
   width: 85%;

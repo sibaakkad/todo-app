@@ -11,7 +11,7 @@ function AddTask() {
   let generateId = Math.floor((1 + Math.random()) * 0x10000)
     .toString(16).substring(1);
 
-  const tempObject = { id: generateId, task: taskName, completed: true }
+  const tempObject = { id: generateId, task: taskName, completed: false }
 
   const dispatch = useDispatch();
   return (
@@ -25,7 +25,7 @@ function AddTask() {
             className="me-2"
             aria-label="Search" value={taskName} onChange={(e) => setTaskName(e.target.value)}
           />
-          <Button onClick={() => { dispatch(addTask(tempObject)); handleOnClick() }} variant="primary">Add</Button>
+          <Button onClick={() => { dispatch(addTask(tempObject)); handleOnClick() }} variant="success">Add</Button>
         </Form>
       </Container>
     </div>
