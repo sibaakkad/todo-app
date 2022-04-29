@@ -13,8 +13,12 @@ export const tasksSlice = createSlice({
 
     addTask: (state, action) => {
       // console.log(action)
+     
+      if(!( !action.payload.task || /^\s*$/.test(action.payload.task))){
+         // state.value .push(action.payload);
       state.value = [...state.value, action.payload];
-      // state.value .push(action.payload);
+      }
+     console.log("Boş değer girildi....")
     },
     deleteTask: (state, action) => {
       state.value = state.value.filter((element) => element.id != action.payload)
